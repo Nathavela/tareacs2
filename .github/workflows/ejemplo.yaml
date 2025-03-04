@@ -1,0 +1,11 @@
+name: CI Example
+
+on: push  # Se ejecuta en cualquier push
+
+jobs:
+  build:
+    runs-on: ubuntu-latest  # Define el entorno
+
+    steps:
+      - name: Ejecutar un script simple
+        run: echo "Hello, GitHub Actions!"
