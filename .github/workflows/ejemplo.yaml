@@ -1,11 +1,14 @@
-name: CI Example
+name: workflow-services
 
-on: push  # Se ejecuta en cualquier push
+on: 
+  push:
+    braches:
+      - main  
 
 jobs:
-  build:
-    runs-on: ubuntu-latest  # Define el entorno
+  trabajo1:
+    runs-on: ubuntu-latest  
 
     steps:
-      - name: Ejecutar un script simple
-        run: echo "Hello, GitHub Actions!"
+      - name: listar archivos
+        run: ls -la
